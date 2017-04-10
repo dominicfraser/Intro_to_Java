@@ -45,9 +45,10 @@ public class BusTest{
     assertEquals( 0,this.bus.passengerCount() );
   }
 
-  // @Test
-  // public void boardsPassengersFromBusStop(){
-    
-  // }
+  @Test
+  public void busHasSeats(){
+    Person[] x = new Person[8];
+    assertEquals( x, this.bus.getSeats() );
+  }
 
 }

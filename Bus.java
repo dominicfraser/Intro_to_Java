@@ -11,6 +11,10 @@ public class Bus{
     return this.number;
   }
 
+  public Person[] getSeats(){
+    return this.seats;
+  }
+
   public int passengerCount(){
     int count = 0;
     for(Person person : this.seats){
@@ -39,19 +43,5 @@ public class Bus{
     }
   }
 
-  // public void arrival(BusStop busStop){
-  //   for(Person person : BusStop.queue){
-  //     if(isBusFull()){
-  //       return;
-  //     }
-  //     for(Person seat : this.seats){
-  //       if(seat == null){     
-  //       this.seats[] = person
-  //       BusStop.queue = null
-  //       break 
-  //       }
-  //     }
-  //   }
-  // }
 
 }

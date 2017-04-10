@@ -21,4 +21,30 @@ class BusStop{
     this.queue[queueCount] = person;
   }
 
+  public void remove(){
+    int queueCount = queueCount();
+    this.queue[queueCount] = null;
+  }
+
+  public void busArrival(Bus bus){
+    // Person[] seats = bus.getSeats();
+    // this just sets the copied version
+    for(Person person : this.queue){
+      if(bus.isBusFull()){
+        return;
+      }
+        bus.board(person);
+
+      // for(Person passenger : seats){
+        // if(passenger == null){
+        //   passenger = person;
+        //   break;
+      // this just sets the copied version
+        }
+      }
+
+
+
 }
+
+
