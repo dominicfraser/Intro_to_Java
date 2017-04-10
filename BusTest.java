@@ -36,4 +36,11 @@ public class BusTest{
     assertEquals( 1,this.bus.passengerCount() );
   }
 
+  @Test
+  public void disembarkAllPassengers(){
+    this.bus.board(person);
+    this.bus.disembarkAll();
+    assertEquals( 0,this.bus.passengerCount() );
+  }
+
 }

@@ -33,4 +33,10 @@ public class Bus{
     this.seats[passengerCount] = person;
   }
 
+  public void disembarkAll(){
+    for(int i = 0; i < seats.length; i++){
+      this.seats[i] = null;
+    }
+  }
+
 }
