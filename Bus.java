@@ -1,4 +1,4 @@
-public class Bus {
+public class Bus{
   private int number;
   private Person[] seats;
 

@@ -11,4 +11,9 @@ public class BusTest{
     this.bus = new Bus(1);
   }
 
+  @Test
+  public void busHasNumber(){
+    assertEquals( 1,this.bus.getNumber() );
+  }
+
 }
