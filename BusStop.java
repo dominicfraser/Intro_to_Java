@@ -21,13 +21,21 @@ class BusStop{
     this.queue[queueCount] = person;
   }
 
-  public void remove(){
-    int queueCount = queueCount() - 1;
-    if(queueCount < 0){
-      return;
+  public void remove(Person person){
+    int position = 0;
+    for(Person waiting : this.queue){
+      if(person == waiting){
+        this.queue[position] = null;
+      }
+      position++;
     }
-    this.queue[queueCount] = null;
   }
+  //   int queueCount = queueCount() - 1;
+  //   if(queueCount < 0){
+  //     return;
+  //   }
+  //   this.queue[queueCount] = null;
+  // }
 
   public void busArrival(Bus bus){
 
@@ -36,9 +44,11 @@ class BusStop{
         return;
       }
         bus.board(person);
-        remove();
+        remove(person);
         }
       }
+
+  
 
 
 

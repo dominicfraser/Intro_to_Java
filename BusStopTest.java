@@ -23,13 +23,13 @@ public class BusStopTest{
   @Test
   public void removePersonFromQueue(){
     this.busStop.add(this.person);
-    this.busStop.remove();
+    this.busStop.remove(this.person);
     assertEquals( 0,this.busStop.queueCount() );
   }  
 
   @Test
   public void removePersonEmptyQueue(){
-    this.busStop.remove();
+    this.busStop.remove(this.person);
     assertEquals( 0, this.busStop.queueCount() );
   }
 
