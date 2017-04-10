@@ -30,19 +30,13 @@ class BusStop{
   }
 
   public void busArrival(Bus bus){
-    // Person[] seats = bus.getSeats();
-    // this just sets the copied version
+
     for(Person person : this.queue){
       if(bus.isBusFull()){
         return;
       }
         bus.board(person);
         remove();
-      // for(Person passenger : seats){
-        // if(passenger == null){
-        //   passenger = person;
-        //   break;
-      // this just sets the copied version
         }
       }
 
