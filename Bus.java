@@ -39,4 +39,19 @@ public class Bus{
     }
   }
 
+  // public void arrival(BusStop busStop){
+  //   for(Person person : BusStop.queue){
+  //     if(isBusFull()){
+  //       return;
+  //     }
+  //     for(Person seat : this.seats){
+  //       if(seat == null){     
+  //       this.seats[] = person
+  //       BusStop.queue = null
+  //       break 
+  //       }
+  //     }
+  //   }
+  // }
+
 }

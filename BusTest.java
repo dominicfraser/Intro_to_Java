@@ -5,11 +5,13 @@ public class BusTest{
 
   Bus bus;
   Person person;
+  BusStop busStop;
 
   @Before
   public void before(){
     this.bus = new Bus(1);
     this.person = new Person();
+    this.busStop = new BusStop();
   }
 
   @Test
@@ -42,5 +44,10 @@ public class BusTest{
     this.bus.disembarkAll();
     assertEquals( 0,this.bus.passengerCount() );
   }
+
+  // @Test
+  // public void boardsPassengersFromBusStop(){
+    
+  // }
 
 }
