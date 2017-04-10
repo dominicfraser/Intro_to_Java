@@ -28,11 +28,18 @@ public class BusStopTest{
   }  
 
   @Test
+  public void removePersonEmptyQueue(){
+    this.busStop.remove();
+    assertEquals( 0, this.busStop.queueCount() );
+  }
+
+
+  @Test
   public void boardsPassengersFromBusStop(){
     this.busStop.add(this.person);
     this.busStop.busArrival(this.bus);
     assertEquals( 1,this.bus.passengerCount() );
-    // assertEquals( 0,this.busStop.queueCount() );
+    assertEquals( 0,this.busStop.queueCount() );
   }
 
 }
