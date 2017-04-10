@@ -8,7 +8,7 @@ public class BusTest{
 
   @Before
   public void before(){
-    
+    this.bus = new Bus(1);
   }
 
 }
