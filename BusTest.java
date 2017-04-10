@@ -9,6 +9,7 @@ public class BusTest{
   @Before
   public void before(){
     this.bus = new Bus(1);
+    this.person = new Person();
   }
 
   @Test
@@ -19,6 +20,20 @@ public class BusTest{
   @Test
   public void busStartsEmpty(){
     assertEquals( 0,this.bus.passengerCount() );
+  }
+
+  @Test
+  public void busIsFull(){
+    for(int i = 0; i < 8; i++){
+      this.bus.board(person);
+    }
+    assertEquals( true, this.bus.isBusFull() );
+  }
+
+  @Test 
+  public void canLoadPassenger(){
+    this.bus.board(person);
+    assertEquals( 1,this.bus.passengerCount() );
   }
 
 }

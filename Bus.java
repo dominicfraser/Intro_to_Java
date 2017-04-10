@@ -21,4 +21,16 @@ public class Bus{
     return count;
   }
 
+  public boolean isBusFull(){
+    return passengerCount() == this.seats.length;
+  }
+
+  public void board(Person person){
+    if(isBusFull()){
+      return; 
+    }
+    int passengerCount = passengerCount();
+    this.seats[passengerCount] = person;
+  }
+
 }
