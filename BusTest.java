@@ -16,4 +16,9 @@ public class BusTest{
     assertEquals( 1,this.bus.getNumber() );
   }
 
+  @Test
+  public void busStartsEmpty(){
+    assertEquals( 0,this.bus.passengerCount() );
+  }
+
 }
