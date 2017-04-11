@@ -40,6 +40,7 @@ public class BusStopTest{
     this.busStop.busArrival(this.bus);
     assertEquals( 1,this.bus.passengerCount() );
     assertEquals( 0,this.busStop.queueCount() );
+    
   }
 
 }
