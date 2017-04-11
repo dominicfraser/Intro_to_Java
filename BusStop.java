@@ -30,12 +30,6 @@ class BusStop{
       position++;
     }
   }
-  //   int queueCount = queueCount() - 1;
-  //   if(queueCount < 0){
-  //     return;
-  //   }
-  //   this.queue[queueCount] = null;
-  // }
 
   public void busArrival(Bus bus){
 
