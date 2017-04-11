@@ -10,7 +10,7 @@ public class BusStopTest{
   @Before
   public void before(){
     this.busStop = new BusStop();
-    this.person = new Person();
+    this.person = new Person("Jake");
     this.bus = new Bus(1);
   }
 
